@@ -1,0 +1,344 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>台灣分紅保單市場解析</title><style>body{font-family:"Noto Sans TC","Noto Serif CJK TC",sans-serif;max-width:900px;margin:auto;padding:16px;line-height:1.6}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ccc;padding:3px 5px}a{word-break:break-all}</style><h1>台灣分紅保單市場三四十年解析：紅利實現率的真實紀錄</h1>
+<p><em>資料截至 2026-10-21（民國115年）。所有數字均取自壽險公司官網揭露檔、主管機關公告或新聞報導，逐筆來源見 <code>data.csv</code>／網站。無資料處明確標示「無公開資料」，不做任何推估。</em></p>
+<h2>一、先講結論（摘要）</h2>
+<ol>
+<li><strong>「紅利實現率」在台灣是很新的揭露項目。</strong> 雖然台灣的強制分紅保單從民國80年代就有（依財政部80.12.31台財保第800484251號函之紅利公式），民國91年起有「分紅保單」制度（台財保字第0910712459號令），但<strong>以「實際紅利／最可能紅利（中分紅）」計算的實現率，絕大多數公司直到近年才公開</strong>。國泰人壽揭露檔明載「自112年起揭露…紅利實現率」<sup id="fnref:cathay"><a class="footnote-ref" href="#fn:cathay">1</a></sup>；2024年金管會訂定《人身保險業辦理分紅人壽保險商品業務應注意事項》，才把「紅利宣告日後30日內於網站揭露紅利實現率」寫成全面性規定<sup id="fnref:fsc2024"><a class="footnote-ref" href="#fn:fsc2024">2</a></sup><sup id="fnref:law"><a class="footnote-ref" href="#fn:law">3</a></sup>。因此<strong>民國90–111年（2001–2022）幾乎所有公司都屬「無公開資料」</strong>，例外只有富邦人壽官網回溯到2015分紅年度（民國105年適用）的逐商品實現率。</li>
+<li><strong>兩極化很明顯：近十年賣的商品幾乎都 ≥100%，名稱標示民國93–98年版本前後的舊商品多數 &lt;100%。</strong></li>
+<li>穩定兌現（取得之商品幾乎全數 ≥100%）：富邦人壽（含原ING安泰商品，105–115年度均100%或105%）、台灣人壽（含原宏利、中國信託商品；113–115年度全部 ≥100%）、保誠人壽外幣商品（114–115年度全部 ≥100%）、安達人壽、法國巴黎人壽、國泰人壽（幸福一生、大吉大利，115年度代表格全部 ≥100%）。</li>
+<li>明顯落差：<strong>凱基人壽（原中國人壽與原保誠業務員通路的舊商品）115年度64筆中42筆低於100%，最低70%</strong>（大紅大利、紅運三喜(97)、紅運年年(96A)等），中位數95%<sup id="fnref:kgi"><a class="footnote-ref" href="#fn:kgi">4</a></sup>；<strong>保誠人壽台幣舊商品114–115年度160筆中53筆低於100%，最低格51%</strong>，集中在富利世代(95–98)、紅運年年、紅運高升等民國95–98年前後的商品<sup id="fnref:pca"><a class="footnote-ref" href="#fn:pca">5</a></sup>；<strong>臺銀人壽</strong>萬年紅甲/乙型67.18%/66.55%、全家福61.15%、全家福(101) 50.00%（114分紅年度）<sup id="fnref2:twb"><a class="footnote-ref" href="#fn:twb">6</a></sup>。</li>
+<li><strong>台幣 vs 外幣：已取得的外幣（美元）分紅商品，沒有任何一筆低於100%</strong>（保誠、台灣人壽、富邦、安達、法巴；共126筆）。但這主要反映外幣分紅保單大多是民國105年後才推出、仍在早期年度，<strong>不能據此推論外幣長期一定比較好</strong>。所有低於100%的紀錄都在台幣舊商品。</li>
+<li><strong>公司新聞稿常說「連續N年100%以上」，要看清楚涵蓋範圍。</strong> 保誠稱「過去13年所銷售」的保單皆達100%中分紅<sup id="fnref:pcanews"><a class="footnote-ref" href="#fn:pcanews">7</a></sup>，同時官網揭露更早的富利世代等商品僅約50–70%；凱基稱愛分享「過去16年持續維持100%中分紅實現率」<sup id="fnref2:udn"><a class="footnote-ref" href="#fn:udn">8</a></sup>，但同一年官網揭露的原中國人壽／保誠舊商品有七成低於100%。兩者不矛盾，但「整體都兌現」的印象不準確。</li>
+<li><strong>台灣人壽「台壽舊帳」實現率高達115%–1477%</strong>，並不代表紅利特別豐厚，而是舊商品（多為民國90年代銷售）當初的「可能紅利」示例基準本身很低；比較不同公司時不應把這種數字當成績效。</li>
+</ol>
+<h2>二、市場沿革</h2>
+<h3>1. 強制分紅時代（民國80年代–91年）</h3>
+<p>早期台灣壽險保單多為「強制分紅保單」：依財政部80年台財保第800484251號函，以「紅利分配利率（臺銀、一銀、合庫二年期定儲利率）與預定利率之差」計算利差紅利，加上死差紅利。民國91年12月財政部函釋（台財保字第0910072808號）規定自92保單年度起，死差損益與利差損益可互抵，因互抵減少的紅利轉提責任準備金<sup id="fnref:twb"><a class="footnote-ref" href="#fn:twb">6</a></sup>。這類保單沒有「最可能紅利」示例，因此<strong>沒有、也無法計算「紅利實現率」</strong>。</p>
+<h3>2. 高預定利率、利差損與分紅保單的第一波（民國91–98年）</h3>
+<p>民國91年起開放「分紅人壽保險單」（南山、國泰等揭露檔均引用台財保字第0910712459號令），各公司（國泰幸福一生/大吉大利、中國人壽、保誠紅運/富利世代/共好贏家、ING安泰雙福/富貴、台灣人壽鴻運/豐碩人生、宏利紅不讓、臺銀萬年紅/全家福、朝陽福利年年等）推出第一波分紅商品。此後市場利率長期下行，高預定利率保單出現持續利差損——例如全球人壽承接國華後說明「高預定利保單每年皆會產生高額利差損」<sup id="fnref:tglife"><a class="footnote-ref" href="#fn:tglife">9</a></sup>。今天看到的低實現率（凱基、保誠台幣舊品、臺銀）主要集中在這一波商品。</p>
+<h3>3. 退場與整併潮（民國98–106年）</h3>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>事件</th>
+<th>來源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2009</td>
+<td>富邦金收購ING安泰人壽，與富邦人壽合併</td>
+<td><sup id="fnref:fubonmerge"><a class="footnote-ref" href="#fn:fubonmerge">10</a></sup></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>中國人壽承接英國保誠人壽「業務員通路」保單；保誠保留銀行/電銷通路</td>
+<td><sup id="fnref:ltn2009"><a class="footnote-ref" href="#fn:ltn2009">11</a></sup></td>
+</tr>
+<tr>
+<td>2011</td>
+<td>中信金收購大都會人壽，改名中國信託人壽</td>
+<td><sup id="fnref:finfo"><a class="footnote-ref" href="#fn:finfo">12</a></sup></td>
+</tr>
+<tr>
+<td>2013</td>
+<td>全球人壽概括承受國華人壽（台灣首件壽險退場）</td>
+<td><sup id="fnref2:tglife"><a class="footnote-ref" href="#fn:tglife">9</a></sup></td>
+</tr>
+<tr>
+<td>2013–14</td>
+<td>中國信託人壽概括承受宏利人壽台灣分公司</td>
+<td><sup id="fnref:fsc2013"><a class="footnote-ref" href="#fn:fsc2013">13</a></sup></td>
+</tr>
+<tr>
+<td>2015</td>
+<td>國泰人壽概括承受國寶人壽、幸福人壽（7/1交割）</td>
+<td><sup id="fnref:fsc2015"><a class="footnote-ref" href="#fn:fsc2015">14</a></sup></td>
+</tr>
+<tr>
+<td>2016</td>
+<td>台灣人壽與中國信託人壽合併（台灣人壽存續）</td>
+<td><sup id="fnref:fsc2015b"><a class="footnote-ref" href="#fn:fsc2015b">15</a></sup></td>
+</tr>
+<tr>
+<td>2017</td>
+<td>南山人壽概括承受朝陽人壽</td>
+<td><sup id="fnref:ib"><a class="footnote-ref" href="#fn:ib">16</a></sup><sup id="fnref2:finfo"><a class="footnote-ref" href="#fn:finfo">12</a></sup></td>
+</tr>
+<tr>
+<td>2022</td>
+<td>安達人壽與康健人壽合併為安達國際人壽</td>
+<td><sup id="fnref3:finfo"><a class="footnote-ref" href="#fn:finfo">12</a></sup></td>
+</tr>
+<tr>
+<td>2024</td>
+<td>中國人壽更名凱基人壽</td>
+<td><sup id="fnref:cna2023"><a class="footnote-ref" href="#fn:cna2023">17</a></sup></td>
+</tr>
+</tbody>
+</table>
+<p>被承受公司的分紅保單多以<strong>獨立區隔帳戶</strong>續管（國泰「幸福分紅帳」、南山「朝陽分紅保單」、台灣人壽「台壽舊帳／台壽帳」），所以舊公司的商品實現率可以在承接公司的揭露檔中找到（見網站「原銷售公司」下拉選單）。國寶、國華、大都會、朝陽本身：<strong>無公開實現率資料</strong>。</p>
+<h3>4. 外幣分紅與新一代分紅（民國105年後）</h3>
+<p>保誠、宏利（→台灣人壽）、富邦等陸續推出美元分紅保單；2023年起法巴、安達加入，2026年新光推出台幣分紅、安聯7月首推分紅。經濟日報2026/5報導已有富邦、保誠、法巴、安達、凱基、新光、台灣人壽七家推出分紅保單，2026年紅利宣告最高達120%<sup id="fnref:udn"><a class="footnote-ref" href="#fn:udn">8</a></sup>。</p>
+<h3>5. 揭露規範演進</h3>
+<ul>
+<li>早期：資訊公開僅需揭露「保單紅利之計算公式、相關說明及分紅保單紅利」（各公司5-4/5-5項），多數公司只列<strong>紅利金額</strong>（例：中華郵政、南山／朝陽、國泰金佳福、保誠2016–2024年各檔）。</li>
+<li>2023（民國112年）：國泰等開始揭露可分配紅利、分配比率及紅利實現率<sup id="fnref2:cathay"><a class="footnote-ref" href="#fn:cathay">1</a></sup>。</li>
+<li>2024：金管會發布分紅應注意事項：分配予要保人比例不得低於70%；紅利宣告後30日內網站揭露各商品可分配紅利、分配比率、<strong>紅利實現率</strong>；連續二年未達最可能紅利累積值須向要保人解釋並向主管機關說明<sup id="fnref2:fsc2024"><a class="footnote-ref" href="#fn:fsc2024">2</a></sup><sup id="fnref2:law"><a class="footnote-ref" href="#fn:law">3</a></sup>。</li>
+<li>2024/6/30前銷售文件的「最可能紅利」＝中分紅（富邦官網註記）。</li>
+</ul>
+<h2>三、各公司實現率比較（商品層級；彙總指標為作者依官網數字計算的中位數，不是公司公布的數字）</h2>
+<table>
+<thead>
+<tr>
+<th>現屬公司</th>
+<th>幣別</th>
+<th>筆數</th>
+<th>年度(民國)</th>
+<th>中位數</th>
+<th>最低</th>
+<th>最高</th>
+<th>≥100%占比</th>
+<th>評價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>台灣人壽</td>
+<td>台幣</td>
+<td>136</td>
+<td>113–115</td>
+<td>165.0%</td>
+<td>100.0%</td>
+<td>1477.0%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>法國巴黎人壽</td>
+<td>台幣</td>
+<td>3</td>
+<td>115</td>
+<td>105%</td>
+<td>105%</td>
+<td>105%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>保誠人壽</td>
+<td>外幣(美元)</td>
+<td>106</td>
+<td>114–115</td>
+<td>102.5%</td>
+<td>100.0%</td>
+<td>122.5%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>富邦人壽</td>
+<td>台幣</td>
+<td>55</td>
+<td>105–115</td>
+<td>100%</td>
+<td>100%</td>
+<td>105%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>保誠人壽</td>
+<td>台幣</td>
+<td>160</td>
+<td>114–115</td>
+<td>100.0%</td>
+<td>51.0%</td>
+<td>100.0%</td>
+<td>66.9%</td>
+<td>多數達標,部分商品低於100%</td>
+</tr>
+<tr>
+<td>台灣人壽</td>
+<td>外幣(美元)</td>
+<td>12</td>
+<td>113–115</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>國泰人壽</td>
+<td>台幣</td>
+<td>3</td>
+<td>115</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>安達人壽</td>
+<td>外幣(美元)</td>
+<td>4</td>
+<td>113–115</td>
+<td>100.0%</td>
+<td>100%</td>
+<td>100%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>富邦人壽</td>
+<td>外幣(美元)</td>
+<td>3</td>
+<td>113–114</td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>100.0%</td>
+<td>穩定兌現(幾乎全數≥100%)</td>
+</tr>
+<tr>
+<td>法國巴黎人壽</td>
+<td>外幣(美元)</td>
+<td>1</td>
+<td>115</td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>100.0%</td>
+<td>資料不足</td>
+</tr>
+<tr>
+<td>凱基人壽</td>
+<td>台幣</td>
+<td>64</td>
+<td>115</td>
+<td>95.0%</td>
+<td>70.0%</td>
+<td>110.0%</td>
+<td>34.4%</td>
+<td>明顯落差(中位數&lt;100%)</td>
+</tr>
+<tr>
+<td>臺銀人壽</td>
+<td>台幣</td>
+<td>4</td>
+<td>115</td>
+<td>63.8%</td>
+<td>50.0%</td>
+<td>67.18%</td>
+<td>0.0%</td>
+<td>明顯落差(中位數&lt;100%)</td>
+</tr>
+</tbody>
+</table>
+<p>說明：
+- 「年度」為紅利宣告/適用年度（多數公司＝保單分紅年度+1）。
+- 保誠為「累積」實現率；國泰、保誠為代表年齡/年期/保單年度格之中位數（另列最低、最高）。
+- 終期紅利、英式「額外分紅保額」不列入上表彙總（仍收錄於資料檔）。
+- 新聞稿型「公司宣稱」紀錄另列於資料檔，不列入彙總。</p>
+<h3>各公司重點</h3>
+<ul>
+<li><strong>富邦人壽</strong>：官網列示之原ING安泰商品（雙福PLS2、富貴PWL、分紅養老PE、新生活PNEL）2015–2022分紅年度皆100%，2023、2024年105%；PAB紅運年年2025分紅年度105%。新聞稿稱連續14年整體≥100%、2026最高115%<sup id="fnref:fbnews"><a class="footnote-ref" href="#fn:fbnews">18</a></sup>。<strong>缺口</strong>：官網其餘約40檔商品頁為動態載入，本次無法取得。</li>
+<li><strong>台灣人壽</strong>：113–115年度，台壽舊帳3個年度合計108筆，最低115%、中位數171.5%；台壽帳（含宏利紅不讓、分紅養老、富貴雙喜、金好存、中信圓滿Plus等）與外幣帳全部100%<sup id="fnref:tl"><a class="footnote-ref" href="#fn:tl">19</a></sup>。</li>
+<li><strong>保誠人壽</strong>：114–115年度外幣106筆全部≥100%（各商品中位數最高122.5%）；台幣160筆中53筆&lt;100%，多為民國95–98年前後之富利世代、紅運年年、紅運高升、富貴長紅、步步高升等<sup id="fnref2:pca"><a class="footnote-ref" href="#fn:pca">5</a></sup>。2016–2024年檔案只有紅利金額，無實現率。</li>
+<li><strong>凱基人壽</strong>：115年度美式商品實現率70%–110%；英式「累積增額(年度)分紅保額」79%–100%、「額外(關懷)分紅保額」65%–100%<sup id="fnref2:kgi"><a class="footnote-ref" href="#fn:kgi">4</a></sup>。</li>
+<li><strong>國泰人壽</strong>：幸福一生（原幸福人壽）10年期各格100%、20年期多為&gt;100%至442%；大吉大利全部100%（115年度）<sup id="fnref3:cathay"><a class="footnote-ref" href="#fn:cathay">1</a></sup>。金佳福、金佳紅：僅紅利金額，無實現率。</li>
+<li><strong>臺銀人壽</strong>：4檔皆&lt;100%（50.00%–67.18%）<sup id="fnref3:twb"><a class="footnote-ref" href="#fn:twb">6</a></sup>。</li>
+<li><strong>安達人壽</strong>：財富傳家113–115年度100%、美利紅115年度100%；新聞稿稱2026年11張全數100%<sup id="fnref:chubb"><a class="footnote-ref" href="#fn:chubb">20</a></sup>。</li>
+<li><strong>法國巴黎人壽</strong>：2026首度宣告，鴻運金喜、鴻運雙享、豐收雙享105%，美添鴻運外幣100%<sup id="fnref:cardif"><a class="footnote-ref" href="#fn:cardif">21</a></sup>。</li>
+<li><strong>無公開資料（本次未取得）</strong>：新光人壽（官網聲稱有揭露，但連線遭拒，未取得數字）、南山人壽／朝陽人壽（僅紅利金額）、中華郵政（僅公式與金額）、全球人壽／國華、三商美邦、遠雄、友邦、元大；第一金人壽聲明目前無分紅商品；安聯2026/7才推出，尚未宣告。</li>
+</ul>
+<h2>四、台幣 vs 外幣</h2>
+<ul>
+<li>外幣（美元）商品：已取得126筆，<strong>最低100%</strong>。</li>
+<li>台幣商品：425筆（不含終期/額外紅利）；低於100%者集中在凱基（原中壽/保誠舊品）、保誠台幣舊品、臺銀。</li>
+<li>解讀限制：外幣分紅多為民國105年後推出，紅利年度短；台幣舊品歷經長期低利率。差異主要來自<strong>銷售年代與當初示例假設</strong>，而非幣別本身。資料不足以判斷外幣長期表現。</li>
+</ul>
+<h2>五、資料缺口與限制</h2>
+<ol>
+<li>民國90–111年：除富邦（105–112年度）外，所有公司<strong>無公開實現率資料</strong>（當時法規未要求揭露，舊版揭露檔多已被新版覆蓋；Wayback Machine 查詢無結果）。</li>
+<li>多家公司揭露檔只保留最新一年（國泰、凱基、臺銀），因此看不到趨勢。</li>
+<li>富邦官網、新光官網、友邦官網為動態或阻擋自動擷取，數據不完整。</li>
+<li>各公司實現率定義近似但不完全一致（年度 vs 累積、美式現金紅利 vs 英式增額保額），跨公司比較僅供參考。</li>
+<li>實現率高低不等於實際報酬高低：分母「最可能紅利」本身的假設高低差異很大（台壽舊帳即為例）。</li>
+</ol>
+<h2>六、結論</h2>
+<ul>
+<li>以官方揭露來看，<strong>近十年在台銷售的分紅保單（台幣與外幣）幾乎都按中分紅或以上兌現</strong>，富邦、台灣人壽（含宏利/中信）、保誠外幣、安達、法巴、國泰皆如此。</li>
+<li><strong>真正「給不出來」的是商品名稱標示為民國93–98年版本前後的一批台幣舊分紅保單</strong>：凱基（原中國人壽、原保誠業務員通路）多數僅70%–96%，保誠台幣舊品約50%–75%，臺銀50%–67%。</li>
+<li><strong>完整的長期（30–40年）實現率紀錄在台灣並不存在</strong>；可驗證的歷史最多只到2015分紅年度（富邦）。評估分紅保單時，應同時看「該商品自己的歷年實現率」與「示例假設的投資報酬率」，不能只看公司新聞稿的「連續N年100%」。</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:cathay">
+<p>國泰人壽，分紅保單資訊揭露（幸福一生 95年後）https://www.cathaylife.com.tw/official/content/dam/cathaylife-official/files/laws-policies/public-info/insurance/participating-policy/After_2006.pdf&#160;<a class="footnote-backref" href="#fnref:cathay" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:cathay" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:cathay" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fsc2024">
+<p>金管會新聞稿 2024-04-11 https://www.fsc.gov.tw/ch/home.jsp?aplistdn=ou%3Dnews%2Cou%3Dmultisite%2Cou%3Dchinese%2Cou%3Dap_root%2Co%3Dfsc%2Cc%3Dtw&amp;dataserno=202404110005&amp;dtable=News&amp;id=96&amp;mcustomize=news_view.jsp&amp;parentpath=0%2C2&#160;<a class="footnote-backref" href="#fnref:fsc2024" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:fsc2024" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:law">
+<p>人身保險業辦理分紅人壽保險商品業務應注意事項 https://law.fsc.gov.tw/LawContent.aspx?id=GL003904&#160;<a class="footnote-backref" href="#fnref:law" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:law" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:kgi">
+<p>凱基人壽 保單紅利之計算公式及相關說明（115年度實現率）https://www.kgilife.com.tw/zh-tw/-/media/files/kgil/footer/corp/publicinfo/piinsurance-products/par-formula.pdf&#160;<a class="footnote-backref" href="#fnref:kgi" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:kgi" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:pca">
+<p>保誠人壽 分紅保單紅利宣告 https://www.pcalife.com.tw/zh/public-info/bonus/&#160;<a class="footnote-backref" href="#fnref:pca" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:pca" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:twb">
+<p>臺銀人壽 5-5 保單紅利 https://www.twfhclife.com.tw/wp-content/uploads/5-5.pdf&#160;<a class="footnote-backref" href="#fnref:twb" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:twb" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:twb" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:pcanews">
+<p>自由電子報 2026-05-04 https://market.ltn.com.tw/article/18434&#160;<a class="footnote-backref" href="#fnref:pcanews" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:udn">
+<p>經濟日報 2026-05-14 https://money.udn.com/money/story/5613/9501266&#160;<a class="footnote-backref" href="#fnref:udn" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:udn" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:tglife">
+<p>天天要聞（轉載）全球人壽承接國華十年 https://www.todaymg.com/a/jie-gui-ifrs17-quan-qiu-ren-shou-chao-qian-bu-shu.html&#160;<a class="footnote-backref" href="#fnref:tglife" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:tglife" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fubonmerge">
+<p>MoneyDJ 富邦人壽與安泰人壽合併 https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fd611009-eb27-4756-a5b1-bb671a863882&#160;<a class="footnote-backref" href="#fnref:fubonmerge" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ltn2009">
+<p>自由時報 中壽一元併購保誠 https://ec.ltn.com.tw/article/paper/281918&#160;<a class="footnote-backref" href="#fnref:ltn2009" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:finfo">
+<p>Finfo 保險公司更名或合併對照表（次級資料）https://help.finfo.tw/help/%E4%BF%9D%E9%9A%AA%E5%85%AC%E5%8F%B8%E6%9B%B4%E5%90%8D%E6%88%96%E5%90%88%E4%BD%B5%E5%B0%8D%E7%85%A7%E8%A1%A8/&#160;<a class="footnote-backref" href="#fnref:finfo" title="Jump back to footnote 12 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:finfo" title="Jump back to footnote 12 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:finfo" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fsc2013">
+<p>金管會新聞稿 2013-11-19 https://www.fsc.gov.tw/ch/home.jsp?dataserno=201311190003&amp;dtable=News&amp;id=96&amp;mcustomize=news_view.jsp&amp;parentpath=0%2C2&amp;toolsflag=Y&#160;<a class="footnote-backref" href="#fnref:fsc2013" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fsc2015">
+<p>金管會新聞稿 2015-05-27 https://www.fsc.gov.tw/ch/home.jsp?dataserno=201505270003&amp;dtable=News&amp;id=96&amp;mcustomize=news_view.jsp&amp;parentpath=0%2C2&amp;toolsflag=Y&#160;<a class="footnote-backref" href="#fnref:fsc2015" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fsc2015b">
+<p>金管會新聞稿 2015-11-17 https://www.fsc.gov.tw/ch/home.jsp?dataserno=201511170004&amp;dtable=News&amp;id=96&amp;mcustomize=news_view.jsp&amp;parentpath=0%2C2&amp;toolsflag=Y&#160;<a class="footnote-backref" href="#fnref:fsc2015b" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ib">
+<p>保險局 朝陽人壽清理專區 https://www.ib.gov.tw/ch/home.jsp?id=228&amp;parentpath=0%2C5&#160;<a class="footnote-backref" href="#fnref:ib" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:cna2023">
+<p>中央社 2023-12-20 https://www.cna.com.tw/news/afe/202312200199.aspx&#160;<a class="footnote-backref" href="#fnref:cna2023" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fbnews">
+<p>中央社 2026-05-05 https://www.cna.com.tw/business/chinese/432586&#160;<a class="footnote-backref" href="#fnref:fbnews" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+</li>
+<li id="fn:tl">
+<p>台灣人壽 分紅保單紅利（115/06/01維護）https://www.taiwanlife.com/portal-api/File/25417 ；（114/06/01）https://www.taiwanlife.com/portal-api/File/22256&#160;<a class="footnote-backref" href="#fnref:tl" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+</li>
+<li id="fn:chubb">
+<p>安達人壽 https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/cai-fu-chuan-chia-par-dividend.pdf ；鉅亨網 https://news.cnyes.com/news/id/6441097&#160;<a class="footnote-backref" href="#fnref:chubb" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+</li>
+<li id="fn:cardif">
+<p>法國巴黎人壽 各年度分紅宣告 https://life.cardif.com.tw/annual-announcement&#160;<a class="footnote-backref" href="#fnref:cardif" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
