@@ -24,6 +24,7 @@ a{color:#1d5fa8;word-break:break-all}.sec{display:none}.sec.on{display:block}#re
   <span class="seg" id="cur"><button data-c="台幣" class="on">台幣</button><button data-c="外幣(美元)">外幣</button></span>
   <label>商品 <select id="prod"><option value="">（全部商品：每年中位數/最低/最高）</option></select></label>
  </div>
+ <div id="tlnote" class="card" style="display:none;border-left:5px solid #e76f51;background:#fff7f2"><b>⚠ 台灣人壽「台壽舊帳」實現率解讀注意</b><br><b>事實：</b>舊帳商品實現率達115%–1477%（如真愛人生727%/686%、豐碩人生615%/572%、添生利值557%、鴻運八八275%，113年度），新帳台幣與外幣帳14項商品年年恰好100%。自92保單年度起，適用80年紅利公式之保單死差與利差損益得互抵、互抵減少之紅利轉增提準備金（財政部91/12/18台財保字第0910072808號函，全行業適用，<a href="https://www.taiwanlife.com/portal-api/File/10906" target=_blank>台壽公式說明</a>、<a href="https://www.ib.gov.tw/ch/home.jsp?dataserno=202108240001&dtable=Law&id=45&mcustomize=onemessages_view.jsp&parentpath=0" target=_blank>保險局</a>）；舊商品部分代碼（如3X1、4B1）改採貢獻比例法，且「精算人員得視經營狀況調整紅利分配公式」。實現率＝實際紅利÷可能紅利（<a href="https://law.fsc.gov.tw/LawContent.aspx?id=GL003904" target=_blank>金管會注意事項</a>），分母若較保守，比例即虛高。未找到台壽個別與主管機關協商改寫公式的公開文件。<br><b>觀點（非已證實）：</b>可能是「先射飛鏢再畫靶」──分母被調低使數字好看，但保戶實拿可能遠低於當年建議書；若真多發5、6倍，理應大力宣傳，但未見任何宣傳報導、只見於法定揭露。建議以紅利通知書實拿金額對照當年建議書驗證。詳見「報告」分頁第六章。<br><span class="muted">表中標示「舊帳」的列即台壽舊帳商品。</span></div>
  <div class="card"><div id="info" class="muted"></div><div style="height:340px"><canvas id="ch"></canvas></div></div>
  <div class="card"><div class="tw"><table id="tb"></table></div></div>
 </section>
@@ -44,7 +45,7 @@ a{color:#1d5fa8;word-break:break-all}.sec{display:none}.sec.on{display:block}#re
 <li>明顯落差：<strong>凱基人壽（原中國人壽與原保誠業務員通路的舊商品）115年度64筆中42筆低於100%，最低70%</strong>（大紅大利、紅運三喜(97)、紅運年年(96A)等），中位數95%<sup id="fnref:kgi"><a class="footnote-ref" href="#fn:kgi">4</a></sup>；<strong>保誠人壽台幣舊商品114–115年度160筆中53筆低於100%，最低格51%</strong>，集中在富利世代(95–98)、紅運年年、紅運高升等民國95–98年前後的商品<sup id="fnref:pca"><a class="footnote-ref" href="#fn:pca">5</a></sup>；<strong>臺銀人壽</strong>萬年紅甲/乙型67.18%/66.55%、全家福61.15%、全家福(101) 50.00%（114分紅年度）<sup id="fnref2:twb"><a class="footnote-ref" href="#fn:twb">6</a></sup>。</li>
 <li><strong>台幣 vs 外幣：已取得的外幣（美元）分紅商品，沒有任何一筆低於100%</strong>（保誠、台灣人壽、富邦、安達、法巴；共126筆）。但這主要反映外幣分紅保單大多是民國105年後才推出、仍在早期年度，<strong>不能據此推論外幣長期一定比較好</strong>。所有低於100%的紀錄都在台幣舊商品。</li>
 <li><strong>公司新聞稿常說「連續N年100%以上」，要看清楚涵蓋範圍。</strong> 保誠稱「過去13年所銷售」的保單皆達100%中分紅<sup id="fnref:pcanews"><a class="footnote-ref" href="#fn:pcanews">7</a></sup>，同時官網揭露更早的富利世代等商品僅約50–70%；凱基稱愛分享「過去16年持續維持100%中分紅實現率」<sup id="fnref2:udn"><a class="footnote-ref" href="#fn:udn">8</a></sup>，但同一年官網揭露的原中國人壽／保誠舊商品有七成低於100%。兩者不矛盾，但「整體都兌現」的印象不準確。</li>
-<li><strong>台灣人壽「台壽舊帳」實現率高達115%–1477%</strong>，並不代表紅利特別豐厚，而是舊商品（多為民國90年代銷售）當初的「可能紅利」示例基準本身很低；比較不同公司時不應把這種數字當成績效。</li>
+<li><strong>台灣人壽「台壽舊帳」實現率高達115%–1477%（真愛人生727%/686%、豐碩人生615%/572%、添生利值557%、鴻運八八275%，113年度），而新帳台幣與外幣帳商品年年剛好100%。</strong> 這不代表紅利特別豐厚：92保單年度起死差／利差得互抵、舊商品部分代碼改採貢獻比例法，分母（可能紅利）可能已被改寫得較保守，保戶實拿未必達到當年建議書金額；詳見第六章（含事實依據與作者觀點）。<strong>通則：舊帳商品「實現率破百」都必須先看分母。</strong></li>
 </ol>
 <h2>二、市場沿革</h2>
 <h3>1. 強制分紅時代（民國80年代–91年）</h3>
@@ -281,7 +282,7 @@ a{color:#1d5fa8;word-break:break-all}.sec{display:none}.sec.on{display:block}#re
 <h3>各公司重點</h3>
 <ul>
 <li><strong>富邦人壽</strong>：官網列示之原ING安泰商品（雙福PLS2、富貴PWL、分紅養老PE、新生活PNEL）2015–2022分紅年度皆100%，2023、2024年105%；PAB紅運年年2025分紅年度105%。新聞稿稱連續14年整體≥100%、2026最高115%<sup id="fnref:fbnews"><a class="footnote-ref" href="#fn:fbnews">18</a></sup>。<strong>缺口</strong>：官網其餘約40檔商品頁為動態載入，本次無法取得。</li>
-<li><strong>台灣人壽</strong>：113–115年度，台壽舊帳3個年度合計108筆，最低115%、中位數171.5%；台壽帳（含宏利紅不讓、分紅養老、富貴雙喜、金好存、中信圓滿Plus等）與外幣帳全部100%<sup id="fnref:tl"><a class="footnote-ref" href="#fn:tl">19</a></sup>。</li>
+<li><strong>台灣人壽</strong>：113–115年度，台壽舊帳3個年度合計108筆，最低115%、中位數171.5%；台壽帳（含宏利紅不讓、分紅養老、富貴雙喜、金好存、中信圓滿Plus等）與外幣帳全部100%<sup id="fnref2:tl"><a class="footnote-ref" href="#fn:tl">19</a></sup>。</li>
 <li><strong>保誠人壽</strong>：114–115年度外幣106筆全部≥100%（各商品中位數最高122.5%）；台幣160筆中53筆&lt;100%，多為民國95–98年前後之富利世代、紅運年年、紅運高升、富貴長紅、步步高升等<sup id="fnref2:pca"><a class="footnote-ref" href="#fn:pca">5</a></sup>。2016–2024年檔案只有紅利金額，無實現率。</li>
 <li><strong>凱基人壽</strong>：115年度美式商品實現率70%–110%；英式「累積增額(年度)分紅保額」79%–100%、「額外(關懷)分紅保額」65%–100%<sup id="fnref2:kgi"><a class="footnote-ref" href="#fn:kgi">4</a></sup>。</li>
 <li><strong>國泰人壽</strong>：幸福一生（原幸福人壽）10年期各格100%、20年期多為&gt;100%至442%；大吉大利全部100%（115年度）<sup id="fnref3:cathay"><a class="footnote-ref" href="#fn:cathay">1</a></sup>。金佳福、金佳紅：僅紅利金額，無實現率。</li>
@@ -304,8 +305,65 @@ a{color:#1d5fa8;word-break:break-all}.sec{display:none}.sec.on{display:block}#re
 <li>各公司實現率定義近似但不完全一致（年度 vs 累積、美式現金紅利 vs 英式增額保額），跨公司比較僅供參考。</li>
 <li>實現率高低不等於實際報酬高低：分母「最可能紅利」本身的假設高低差異很大（台壽舊帳即為例）。</li>
 </ol>
-<h2>六、結論</h2>
+<h2>六、台灣人壽「台壽舊帳」實現率異常偏高：事實、法規與觀點</h2>
+<p>台灣人壽官網揭露的「台壽舊帳」商品實現率遠高於100%（本資料集依「適用年度」標示，113年度＝分紅年度112）<sup id="fnref:tl"><a class="footnote-ref" href="#fn:tl">19</a></sup>：</p>
+<table>
+<thead>
+<tr>
+<th>商品（代碼）</th>
+<th>113年度</th>
+<th>114年度</th>
+<th>115年度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真愛人生終身壽險（3Z0 / 3Z1）</td>
+<td>727% / 686%</td>
+<td>885% / 755%</td>
+<td>628% / 603%</td>
+</tr>
+<tr>
+<td>豐碩人生終身壽險A/B型（3X0·3Y0 / 3X1·3Y1·3Y8·3Y9）</td>
+<td>615% / 572%</td>
+<td>1477% / 1420%</td>
+<td>553% / 520%</td>
+</tr>
+<tr>
+<td>添生利值終身保險（4M0）</td>
+<td>557%</td>
+<td>1217%</td>
+<td>511%</td>
+</tr>
+<tr>
+<td>鴻運八八還本終身保險A/B型（4B0·4C0 / 4B1·4C1）</td>
+<td>275% / 268%</td>
+<td>522% / 496%</td>
+<td>250% / 232%</td>
+</tr>
+</tbody>
+</table>
+<p>同一份揭露中，<strong>台壽帳（原宏利、中信商品）、台幣分紅(114)帳與台壽外幣帳共14項商品，每一年都恰好是100%，沒有任何變動</strong>；舊帳其餘商品多落在115%–284%。以上數字已與本報告 data.csv 逐筆核對。</p>
+<h3>（A）事實與法規依據</h3>
+<ol>
+<li><strong>死差／利差互抵（全行業規定）。</strong> 財政部91年12月18日台財保字第0910072808號函：自92保單年度起，適用財政部80年12月31日台財保字第800484251號函紅利公式之保單，<strong>當年度死差損益與利差損益得互相抵用，因互抵而減少之紅利，轉增提長期有效契約責任準備金</strong>。此為適用於所有壽險業者的規定，非台壽獨有。來源：台灣人壽保單紅利計算公式說明 https://www.taiwanlife.com/portal-api/File/10906 ；金管會保險局法規 https://www.ib.gov.tw/ch/home.jsp?dataserno=202108240001&amp;dtable=Law&amp;id=45&amp;mcustomize=onemessages_view.jsp&amp;parentpath=0 （保險局資料另載明：67年1月9日至80年12月31日間預定利率8%以上之保單，得不分配紅利）。</li>
+<li><strong>同名商品有兩組代碼、後者改採不同公式。</strong> 台壽公式說明書（File/10906）中，舊商品同名有兩組代碼（如豐碩人生3X0 vs 3X1、鴻運八八4B0 vs 4B1），後者列在「利源分紅_保證利率」項下，改採<strong>貢獻比例法</strong>。文件並載明「<strong>精算人員得視經營狀況調整紅利分配公式，但需符合主管機關規定</strong>」。來源：https://www.taiwanlife.com/portal-api/File/10906</li>
+<li><strong>實現率的定義決定了它可以「虛高」。</strong> 實現率＝當年度實際分配紅利 ÷ 最可能（可能）紅利金額（金管會《人身保險業辦理分紅人壽保險商品業務應注意事項》https://law.fsc.gov.tw/LawContent.aspx?id=GL003904 ；台壽揭露檔亦同此定義<sup id="fnref3:tl"><a class="footnote-ref" href="#fn:tl">19</a></sup>）。<strong>若分母是依改寫後、較保守的公式重新計算的「可能紅利」，比例就會被放大；實現率500%不代表保戶拿到當年建議書上金額的5倍，甚至不代表拿到建議書金額。</strong></li>
+<li><strong>未找到台壽個別協商文件。</strong> 本次查詢<strong>未找到</strong>台灣人壽個別與金管會（或前財政部保險司）協商、核准改寫特定舊商品紅利公式的公開文件；上述第2點僅能證明公式說明書的現況與調整權限，無法證明改寫的時點、理由與核准內容。</li>
+</ol>
+<h3>（B）分析觀點（以下為作者觀點與推論，非已證實事實）</h3>
 <ul>
+<li><strong>「先射飛鏢再畫靶」。</strong> 一個可能的解讀是：這些商品在高利率環境下銷售，當時以較高的假設利率展示紅利；之後出現利差損，在主管機關允許的框架內（死利差互抵、改採貢獻比例法、精算人員調整公式）改寫分紅方式，<strong>分母（可能紅利）被調低</strong>，於是實現率數字看起來非常漂亮，但保戶實際拿到的紅利，可能仍遠低於當年建議書所預期的金額。</li>
+<li><strong>缺乏宣傳也是一個旁證。</strong> 若實現率5、6倍（甚至14倍）真代表公司實際多發了紅利，照理是可以大力宣傳的亮點。但依本次網路搜尋（2026/10/21），<strong>未見台灣人壽新聞稿或媒體報導以這些數字作宣傳</strong>，相關數字只出現在法定揭露PDF；台壽2025年分紅新商品（美紅旺、吉享紅）的新聞稿也未引用。這比較支持「分母被調低」而非「紅利特別豐厚」的解讀。（唯一相關的是一則轉貼網站摘錄的早年豐碩人生文宣，稱「實際領到的紅利金額均高於投保時預估平均可能紅利金額」，來源為次級資料、年代不明，無法驗證其基準。https://dow10k.com/in/%E5%8F%B0%E7%81%A3%E4%BA%BA%E5%A3%BD+%E8%B1%90%E7%A2%A9%E4%BA%BA%E7%94%9F+dm ）</li>
+<li><strong>新帳每年精準100%。</strong> 14項新帳商品年年剛好100%、零變異，也顯示紅利可能經過平滑處理，被調整到剛好達標；這本身不違規，但代表「100%」較像是管理目標，而非市場績效的自然結果。</li>
+<li><strong>如何驗證。</strong> 最可靠的方法是拿<strong>客戶每年的紅利通知書實際金額</strong>，對照<strong>當年投保建議書上的紅利示例金額</strong>（同保單年度、同保額）。如果實拿明顯低於建議書，就證實高實現率來自分母被改寫。</li>
+</ul>
+<blockquote>
+<p><strong>通則提醒：</strong> 「實現率破百」在舊帳／舊公式商品上普遍必須先看分母——分母是哪一套公式、哪一年的假設算出來的。不同公司、不同帳簿的實現率不能直接比較，舊帳的高實現率不應被當成經營績效或銷售話術。</p>
+</blockquote>
+<h2>七、結論</h2>
+<ul>
+<li><strong>台灣人壽舊帳的數百%實現率應視為分母問題而非績效</strong>（第六章）；評估時以紅利通知書實拿金額對照當年建議書為準。</li>
 <li>以官方揭露來看，<strong>近十年在台銷售的分紅保單（台幣與外幣）幾乎都按中分紅或以上兌現</strong>，富邦、台灣人壽（含宏利/中信）、保誠外幣、安達、法巴、國泰皆如此。</li>
 <li><strong>真正「給不出來」的是商品名稱標示為民國93–98年版本前後的一批台幣舊分紅保單</strong>：凱基（原中國人壽、原保誠業務員通路）多數僅70%–96%，保誠台幣舊品約50%–75%，臺銀50%–67%。</li>
 <li><strong>完整的長期（30–40年）實現率紀錄在台灣並不存在</strong>；可驗證的歷史最多只到2015分紅年度（富邦）。評估分紅保單時，應同時看「該商品自己的歷年實現率」與「示例假設的投資報酬率」，不能只看公司新聞稿的「連續N年100%」。</li>
@@ -368,7 +426,7 @@ a{color:#1d5fa8;word-break:break-all}.sec{display:none}.sec.on{display:block}#re
 <p>中央社 2026-05-05 https://www.cna.com.tw/business/chinese/432586&#160;<a class="footnote-backref" href="#fnref:fbnews" title="Jump back to footnote 18 in the text">&#8617;</a></p>
 </li>
 <li id="fn:tl">
-<p>台灣人壽 分紅保單紅利（115/06/01維護）https://www.taiwanlife.com/portal-api/File/25417 ；（114/06/01）https://www.taiwanlife.com/portal-api/File/22256&#160;<a class="footnote-backref" href="#fnref:tl" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+<p>台灣人壽 分紅保單紅利（115/06/01維護）https://www.taiwanlife.com/portal-api/File/25417 ；（114/06/01）https://www.taiwanlife.com/portal-api/File/22256&#160;<a class="footnote-backref" href="#fnref:tl" title="Jump back to footnote 19 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:tl" title="Jump back to footnote 19 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:tl" title="Jump back to footnote 19 in the text">&#8617;</a></p>
 </li>
 <li id="fn:chubb">
 <p>安達人壽 https://life.chubb.com/content/dam/chubb-sites/life-chubb-com/tw-zh/documents/cai-fu-chuan-chia-par-dividend.pdf ；鉅亨網 https://news.cnyes.com/news/id/6441097&#160;<a class="footnote-backref" href="#fnref:chubb" title="Jump back to footnote 20 in the text">&#8617;</a></p>
@@ -391,7 +449,7 @@ function fillCo(){const m=$('#mode').value;const cs=[...new Set(prodRecs().map(r
 function sel(){const m=$('#mode').value,co=$('#co').value;return prodRecs().filter(r=>r[m]===co&&r.currency===cur)}
 function fillProd(){const ps=[...new Set(sel().map(r=>r.product))].sort();$('#prod').innerHTML='<option value="">（全部商品：每年中位數/最低/最高）</option>'+ps.map(p=>`<option>${p}</option>`).join('')}
 const med=a=>{a=[...a].sort((x,y)=>x-y);const n=a.length;return n?(n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2):null};
-function draw(){const co=$('#co').value,p=$('#prod').value;let rs=sel();const reg=D.companies.find(c=>c.name===co);
+function draw(){const co=$('#co').value,p=$('#prod').value;let rs=sel();$('#tlnote').style.display=(co==='台灣人壽'||co.includes('→台灣人壽'))?'block':'none';const reg=D.companies.find(c=>c.name===co);
  $('#info').innerHTML=(reg?`<b>${reg.name}</b>｜${reg.status}｜${reg.history}<br>揭露狀況：${reg.disclosure}<br>`:'')+(rs.length?'':`<span class="low">此公司/幣別：無公開實現率資料</span>`);
  if(p)rs=rs.filter(r=>r.product===p);
  const yrs=[];for(let y=90;y<=115;y++)yrs.push(y);
@@ -404,7 +462,7 @@ function draw(){const co=$('#co').value,p=$('#prod').value;let rs=sel();const re
  ds.push({label:'100%基準',data:yrs.map(()=>100),borderColor:'#999',pointRadius:0,borderWidth:1});
  if(chart)chart.destroy();chart=new Chart($('#ch'),{type:'line',data:{labels:yrs.map(y=>y+'年'),datasets:ds},options:{maintainAspectRatio:false,spanGaps:false,scales:{y:{title:{display:true,text:'實現率(%)'}}},plugins:{tooltip:{callbacks:{afterBody:()=>'空白年度＝無公開資料'}}}}});
  const rows=rs.sort((a,b)=>b.year-a.year||a.product.localeCompare(b.product));
- $('#tb').innerHTML='<tr><th>年度</th><th>原銷售公司</th><th>商品</th><th>紅利類別</th><th>實現率</th><th>格內範圍</th><th>備註</th><th>來源</th></tr>'+(rows.length?rows.map(r=>`<tr><td>${r.year}</td><td>${r.company}</td><td>${r.product}</td><td>${r.bonus_type}</td><td class="${r.rate<100?'low':'ok'}">${r.rate??'—'}%</td><td>${r.rate_min!=null?r.rate_min+'–'+r.rate_max+'%（'+r.n+'格）':''}</td><td class="muted">${r.note}</td><td><a href="${r.source_url}" target="_blank">連結</a></td></tr>`).join(''):'<tr><td colspan=8>無公開資料</td></tr>')}
+ $('#tb').innerHTML='<tr><th>年度</th><th>原銷售公司</th><th>商品</th><th>紅利類別</th><th>實現率</th><th>格內範圍</th><th>備註</th><th>來源</th></tr>'+(rows.length?rows.map(r=>`<tr><td>${r.year}</td><td>${r.company}</td><td>${r.product}${(r.note||'').includes('台壽舊帳')?' <span style="background:#e76f51;color:#fff;border-radius:3px;padding:0 4px;font-size:11px" title="台壽舊帳：實現率分母可能經改寫，需看分母">舊帳</span>':''}</td><td>${r.bonus_type}</td><td class="${r.rate<100?'low':'ok'}">${r.rate??'—'}%</td><td>${r.rate_min!=null?r.rate_min+'–'+r.rate_max+'%（'+r.n+'格）':''}</td><td class="muted">${r.note}</td><td><a href="${r.source_url}" target="_blank">連結</a></td></tr>`).join(''):'<tr><td colspan=8>無公開資料</td></tr>')}
 ['#mode'].forEach(s=>$(s).onchange=fillCo);$('#co').onchange=()=>{fillProd();draw()};$('#prod').onchange=draw;
 function tagc(c){return c.startsWith('穩定')?'t-good':c.startsWith('多數')?'t-mid':c.startsWith('明顯')?'t-bad':'t-na'}
 function rank(){const S=D.summary[$('#rmode').value];
